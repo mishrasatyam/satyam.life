@@ -1,19 +1,19 @@
-const sveltePreprocess = require("svelte-preprocess");
-const postcss = require("./postcss.config");
+// import adapter from '@sveltejs/adapter-auto';
+import WindiCSS from 'vite-plugin-windicss';
+import begin from '@architect/sveltekit-adapter'
 
-const createPreprocessors = ({ sourceMap }) => [
-	sveltePreprocess({
-		sourceMap,
-		defaults: {
-			style: "postcss",
-		},
-		postcss,
-	}),
-	// You could have more preprocessors, like mdsvex
-];
-
-module.exports = {
-	createPreprocessors,
-	// Options for `svelte-check` and the VS Code extension
-	preprocess: createPreprocessors({ sourceMap: true }),
+/** @type {import('@sveltejs/kit').Config} */
+const config = {
+	kit: {
+		adapter: begin(),
+		// hydrate the <div id="svelte"> element in src/app.html
+		target: '#svelte',
+		vite: {
+			plugins: [
+				WindiCSS()
+			]
+		}
+	}
 };
+
+export default config;
