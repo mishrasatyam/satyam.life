@@ -8,11 +8,11 @@
     "preview": "svelte-kit preview"
   },
   "devDependencies": {
-    "@architect/sveltekit-adapter": "^0.0.4",
-    "@sveltejs/adapter-auto": "next",
     "@sveltejs/kit": "next",
     "svelte": "^3.44.0",
-    "vite-plugin-windicss":"latest"
+    "vite-plugin-windicss": "latest",
+    "@architect/functions": "^4.1.1",
+    "@architect/sveltekit-adapter": "latest"
   },
   "type": "module"
 }
