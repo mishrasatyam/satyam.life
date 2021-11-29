@@ -1,8 +1,22 @@
-<div class="bg-purple-500 text-white mt-5 p-5 shadow-lg rounded-lg">
-    <span class="font-semibold text-xl">Contact Info :</span>
+<script>
+    import {Email,Github,Linkedin,Twitter,Pencil} from '$lib/icons/index'
+    let digital_contacts = [{link:'satyam.mishra975@gmail.com',icon_element:Email,about:'Email'},
+    {link:'https://github.com/mishrasatyam',icon_element: Github,about:'Github'},
+    {link:'https://twitter.com/befocusedj',icon_element: Twitter, about:'Twitter'},
+    {link:'https://www.linkedin.com/in/satyam-mishra-78aa9a122',icon_element: Linkedin,about:'Linkedin'},
+    {link:'https://blog.satyam.life',icon_element: Pencil,about:'Blog'}
+    ]
+</script>
+<div class=" text-white mt-5 p-5 rounded-lg shadow-lg bg-fuchsia-700">
     <div class="m-3">
-        <h3>Benagluru , India</h3>
-        <a href="mailto:satyam.mishra975@gmail.com" class="text-blue-100 underline block">satyam.mishra975@gmail.com</a>
-        <a href="https://github.com/mishrasatyam" class="text-blue-100 underline">Github</a>
+        <div class="flex mt-3 space-x-3">
+            {#each digital_contacts as el}
+                <a class="animate-delay-200 animated animate-zoom-in" href="{!el.link.startsWith('https')?'mailto:':''}{el.link}" target="_blank">
+                <i title="{el.about}">
+                    <svelte:component this={el.icon_element} color="#00bfff"/>
+                </i>
+                </a>
+            {/each}
+        </div>
     </div> 
 </div>
