@@ -9,11 +9,11 @@
 </script>
 <div class=" text-white mt-5 p-5 rounded-lg shadow-lg bg-fuchsia-700">
     <div class="m-3">
-        <div class="flex mt-3 space-x-3">
+        <div class="flex mt-3 space-x-5">
             {#each digital_contacts as el}
-                <a class="animate-delay-200 animated animate-zoom-in" href="{!el.link.startsWith('https')?'mailto:':''}{el.link}" target="_blank">
+                <a rel="noreferrer" class="animate-delay-200 animated animate-zoom-in" href="{!el.link.startsWith('https')?'mailto:':''}{el.link}" target="_blank">
                 <i title="{el.about}">
-                    <svelte:component this={el.icon_element} color="#00bfff"/>
+                    <svelte:component this={el.icon_element} color="#00bfff" size="2.5rem"/>
                 </i>
                 </a>
             {/each}
