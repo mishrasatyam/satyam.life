@@ -1,10 +1,8 @@
 <script>
-    let skills = {'Frontend' : ['Svelte','Svelte kit','HTML','CSS','Javascript'], 'Backend':['Fastify','Node js','Mongodb'],'Cloud':['AWS','Azure']}
+    import skills from '$lib/db/skills.json'
 </script>
-<div class="bg-purple-700 text-white mt-5 p-5 shadow-lg rounded-lg ">
-    <span class="font-semibold text-2xl">What I Know :</span>
-    <div class="m-3 grid grid-cols-3 gap-3">
-                
+<div class="bg-purple-700 text-white mt-5 p-5 shadow-lg rounded-lg " >
+    <div class="m-2 grid grid-cols-3 gap-3">      
         {#each Object.entries(skills) as [key,val]}
         <div class="">
             <header class="font-bold text-xl">{key}</header>
