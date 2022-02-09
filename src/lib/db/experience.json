@@ -6,7 +6,7 @@
         "range": "Feb 2020 - Present",
         "points": [
             "Building an IOT based product ,user based dashboard with svelte(sapper), express, mongodb , influx db, AWS IOT.",
-            "Building an app called Digital Rasid for playstore. Initially used svelte kit, mongodb, tailwindcss with capacitorjs. Later removed capacitor(missed ssr) and used Trusted Web Activity (TWA) to convert website to android app."
+            "Building an app called Digital Rasid for playstore. Initially used svelte kit, mongodb, tailwindcss with capacitorjs. Later removed capacitor(missed ssr) and used Trusted Web Activity (TWA) to convert website to an android app."
         ]
     },
     {
