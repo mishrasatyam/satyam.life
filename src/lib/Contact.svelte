@@ -4,7 +4,7 @@
     {link:'https://github.com/mishrasatyam',icon_element: Github,about:'Github'},
     {link:'https://twitter.com/befocusedj',icon_element: Twitter, about:'Twitter'},
     {link:'https://www.linkedin.com/in/satyam-mishra-78aa9a122',icon_element: Linkedin,about:'Linkedin'},
-    {link:'https://blog.satyam.life',icon_element: Pencil,about:'Blog'}
+    {link:'https://blog.satyam.contact',icon_element: Pencil,about:'Blog'}
     ]
 </script>
 <div class=" text-white mt-5 p-5 rounded-lg shadow-lg bg-fuchsia-700">
