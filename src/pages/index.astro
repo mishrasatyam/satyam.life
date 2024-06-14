@@ -1,0 +1,30 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body>
+    <Header />
+    <main>
+      <h1>🧑‍🚀 Hi, I'm Satyam Mishra!</h1>
+      <p>
+        I work with react and react native to build web and mobile applications
+        for fintech companies. I have around 5 years of total experience. Check
+        my <a
+          target="_blank"
+          href="https://www.linkedin.com/in/satyam-mishra-78aa9a122/"
+          >linkedin here</a
+        >
+        . I have also added my github link in the footer.
+      </p>
+    </main>
+    <Footer />
+  </body>
+</html>
